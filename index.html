@@ -8,9 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main-container">
 
-        <div class="inner-container">
+    <!-- game intro starts -->
+
+    <div class="main-container" id="main-container">
+
+        <div class="intro-container" id="intro-container">
 
             <div class="megadev-logo">
                 <img src="megadev.png" alt="megadev-logo" width="70px" height="70px">
@@ -23,11 +26,139 @@
             </div>
 
             <div class="bring-it-on">
-                <button class="start-game"> Bring It On </button>
+                <button class="start-game" id="start-game"> Bring It On </button>
+            </div>
+
+        </div>
+
+        
+        <div class="complete-modal-container">
+
+            <div class="megadev-logo">
+                <img src="megadev.png" alt="megadev-logo" width="70px" height="70px">
+            </div>
+
+            <div class="intro-dilogue">
+                <h4 id="less-than-seven">Decent TRY</h4>
+                <br>
+                <span class="golden-text"> YOU CAN STILL BE A MEGADEV</span>
+
+                <h4 id="less-than-fifteen">Impressive</h4>
+                <br>
+                <span class="golden-text"> YOU CAN STILL BE A MEGADEV</span>
+
+                <h4 id="victory">Congratulations! </h4>
+                <br>
+                <span class="golden-text"> YOU CAN STILL BE A MEGADEV</span>
+            </div>
+
+            <div class="bring-it-on">
+                <button class="start-game" onclick="onTryagain()"> Try Again </button>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Game intro ends -->
+
+<!-- Game Container Starts -->
+
+<div class="container" id="game-container">
+
+    <div class="megadev-logo-lap">
+        <img src="megadev.png" alt="megadev" width="150px" height="150px">
+    </div>
+
+
+    <div class="question-number-container">
+        <div class="question-number">
+        <h2>Question <span id="question-number">1</span></h2>
+        </div>
+
+    </div>
+
+    <div class="question-container">
+        <p id="question">Which of these will throw a SyntaxError?</p>
+    </div>
+
+    <div class="option-container">
+        
+        <div class="option" id="option1-container" onclick="onOptionChoose(this.id);">
+            <div class="option-text-container">
+                <span id="op1" style="color: goldenrod;">if (x == 1) { }</span>
+              </div>
+            </div>
+        <div class="option" id="option2-container" onclick="onOptionChoose(this.id);">
+            <div class="option-text-container">
+                <span id="op2" style="color: goldenrod;">if (x = 1) { }</span>
+              </div></div>
+        <div class="option" id="option3-container" onclick="onOptionChoose(this.id);">
+            <div class="option-text-container">
+                <span id="op3" style="color: goldenrod;">if (x ==== 1) { }</span>
+              </div></div>
+        <div class="option" id="option4-container" onclick="onOptionChoose(this.id);">
+            <div class="option-text-container">
+                <span id="op4" style="color: goldenrod;">if (x === 1) { }</span>
+              </div></div>
+
+    </div>
+
+    <div class="temp-main">
+        <div class="life-line"> 
+
+            <div class="temp-fifty" id="temp-fifty">
+               50:50
+               <!-- <img src="cross-mark.png" alt="" width="50px" height="50px"> -->
+            </div>
+
+             
+            <div class="temp-chance" id="temp-chance">
+                2x
+                <!-- <img src="cross-mark.png" alt="" width="50px" height="50px"> -->
+            </div>
+     </div>
+
+      <div class="temp-stepper">
+
+            <div class="temp-five-steppers">
+                <div class="stepper-content" id="circle-1"><h4>1</h4></div>
+                <div class="stepper-content" id="circle-2"><h4>2</h4></div>
+                <div class="stepper-content" id="circle-3"><h4>3</h4></div>
+                <div class="stepper-content" id="circle-4"><h4>4</h4></div>
+                <div class="stepper-content" id="circle-5"><h4>5</h4></div>
+            </div>
+
+            <div class="temp-five-steppers">
+                <div class="stepper-content" id="circle-6"><h4>6</h4></div>
+                <div class="stepper-content" id="circle-7"><h4>7</h4></div>
+                <div class="stepper-content" id="circle-8"><h4>8</h4></div>
+                <div class="stepper-content" id="circle-9"><h4>9</h4></div>
+                <div class="stepper-content" id="circle-10"><h4>10</h4></div>
+            </div>
+
+            <div class="temp-five-steppers">
+                <div class="stepper-content" id="circle-11"><h4>11</h4></div>
+                <div class="stepper-content" id="circle-12"><h4>12</h4></div>
+                <div class="stepper-content" id="circle-13"><h4>13</h4></div>
+                <div class="stepper-content" id="circle-14"><h4>14</h4></div>
+                <div class="stepper-content" id="circle-15"><h4>15</h4></div>
             </div>
 
         </div>
 
     </div>
+
+
+
+</div>
+
+
+<!-- Game Container E -->
+
+
+       
+
+<script src="script.js"></script>
+ 
 </body>
 </html>
